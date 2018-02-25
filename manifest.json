@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Numbered bookmarks bar",
+    "version": "0.1",
+    "description": "Numbers bookmarks on bookmarks bar while you hold down  ",
+    "background":
+    {
+        "scripts": ["background.js"]
+    },
+    "permissions": ["bookmarks", "tabs"],
+    "content_scripts":
+    [
+        {
+            "js": ["content.js"]
+        }
+    ],
+    "icons":
+    {
+         "32": "icon32.png",
+         "48": "icon48.png",
+        "128": "icon128.png"
+    },
+}
